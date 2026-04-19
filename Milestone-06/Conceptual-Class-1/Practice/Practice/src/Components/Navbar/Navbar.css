@@ -1,0 +1,38 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+.nav-container{
+display: flex;
+justify-content:space-between;
+align-items: center;
+background-color: rgba(50, 55, 59, 0.324);
+padding: 15px 30px;
+}
+
+.nav-left{
+display: flex;
+gap: 10px;
+align-items: center;
+}
+
+.nav-left>img{
+height: 60px;
+width: 60px;
+border-radius: 50%;
+}
+
+
+.nav-right>ul{
+list-style-type: none;
+display: flex;
+gap: 30px;
+
+}
+.nav-right>ul>li>a{
+text-decoration: none;
+color: rgb(0, 0, 0);
+font-size: 20px;
+}

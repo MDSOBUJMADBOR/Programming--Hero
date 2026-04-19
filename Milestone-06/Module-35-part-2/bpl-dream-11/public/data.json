@@ -1,0 +1,82 @@
+[
+  {
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playerType": "All-Rounder",
+    "rating": 9.5,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Slow Left-arm Orthodox",
+    "price": 500,
+    "playerImg": "https://i.ibb.co.com/217VN1Sr/sakib.jpg"
+  },
+  {
+    "playerName": "Virat Kohli",
+    "playerCountry": "India",
+    "playerType": "Batsman",
+    "rating": 9.8,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Medium",
+    "price": 1000,
+    "playerImg": "https://i.ibb.co.com/TqBC2XM9/birat.jpg"
+  },
+  {
+    "playerName": "Ben Stokes",
+    "playerCountry": "England",
+    "playerType": "All-Rounder",
+    "rating": 9.4,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Right-arm Fast-Medium",
+    "price": 500,
+    "playerImg": "https://i.ibb.co.com/x8GctD0p/ban-stocks.jpg"
+  },
+  {
+    "playerName": "Babar Azam",
+    "playerCountry": "Pakistan",
+    "playerType": "Batsman",
+    "rating": 9.3,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Offbreak",
+    "price": 100000,
+    "playerImg": "https://i.ibb.co.com/7NCGqXz8/Babar-Azam.jpg"
+  },
+  {
+    "playerName": "Mitchell Starc",
+    "playerCountry": "Australia",
+    "playerType": "Bowler",
+    "rating": 9.2,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Left-arm Fast",
+    "price": 95000,
+    "playerImg": "https://i.ibb.co.com/1Yvgm3JV/Mitchell-Starc.jpg"
+  },
+  {
+    "playerName": "Rashid Khan",
+    "playerCountry": "Afghanistan",
+    "playerType": "Bowler",
+    "rating": 9.6,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Legbreak",
+    "price": 105000,
+    "playerImg": "https://i.ibb.co.com/yFJLjx0n/Rashid-Khan.jpg"
+  },
+  {
+    "playerName": "Jos Buttler",
+    "playerCountry": "England",
+    "playerType": "Wicketkeeper-Batsman",
+    "rating": 9.1,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "None",
+    "price": 98000,
+    "playerImg": "https://i.ibb.co.com/rKT55D7q/Jos-Buttler.jpg"
+  },
+  {
+    "playerName": "Kane Williamson",
+    "playerCountry": "New Zealand",
+    "playerType": "Batsman",
+    "rating": 9.0,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Offbreak",
+    "price": 97000,
+    "playerImg": "https://i.ibb.co.com/q3nt5jmT/Kane-Williamson.jpg"
+  }
+]

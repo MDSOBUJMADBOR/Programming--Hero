@@ -1,0 +1,17 @@
+
+.article{
+border: 10px solid black;
+background-color: lightpink;
+margin: 20px;
+width: 300px;
+box-shadow:20px 10px  gray ;
+}
+
+.header{
+height: 500px;
+background-color: rgb(3, 244, 147);
+background-image: url('sobuj.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          
+<section id="players">
+          <h1 id="sobuj">Players</h1>
+          <ul id="player-list">
+                    <li>lorem1 - 1</li>
+                    <li>lorem1 - 2</li>
+                    <li>lorem1 - 3</li>
+                    <li>lorem1 - 4</li>
+          </ul>
+
+</section>
+
+<script>
+  const newChild=document.createElement('li')
+  newChild.innerText='sobuj'
+
+  const h1 =document.createElement('h3');
+  h1.innerText='i am sobuj'
+const h1text=document.getElementById('sobuj')
+h1text.appendChild(h1)
+  const player=document.getElementById('player-list')
+  player.appendChild(newChild);
+</script>
+
+</body>
+</html>

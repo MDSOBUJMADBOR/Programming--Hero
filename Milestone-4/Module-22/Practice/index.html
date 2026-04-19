@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    .li{
+          background-color: aqua;
+          font-size: 20px;
+          color: green;
+                    }
+          .section-style{
+          background-color: green;
+          color: blueviolet;
+          font-size: 1.2rem;
+          font-weight: bold;
+          }
+          </style>
+</head>
+<body>
+<section id="section1">
+          <h1 id="h1">Hello Bangladesh</h1>
+          <ul id="third-list">
+                    <li id="color">Dhaka</li>
+                    <li id="color">Shariatpur</li>
+                    <li id="color">Madaripur</li>
+                    <li class="styles">sorna</li>
+          </ul>
+</section>
+<section id="section2">
+          <ul>
+                    <li>sobuj</li>
+                    <li class="styles">sathi</li>
+                    <li class="styles">halima</li>
+                    <li class="styles">jothi</li>
+          </ul>
+
+</section>
+
+<script>
+const liCollect=document.getElementById('color')
+// liCollect.style.backgroundColor='red'
+// liCollect.classList.add('li')
+
+
+const styleTitle= document.getElementsByClassName('styles')
+for(const style of styleTitle){
+          // console.log(style.innerHTML)
+}
+
+
+const sections =document.querySelectorAll('section')
+// console.log(sections)
+for(const section of sections){
+// console.log(section)
+// section.style.backgroundColor='green'
+// section.style.color='red';
+// section.style.padding='20px'
+// section.style.gap='10px'
+
+section.classList.add('section-style')
+}
+</script>
+          <script src="./script.js"></script>
+</body>
+</html>

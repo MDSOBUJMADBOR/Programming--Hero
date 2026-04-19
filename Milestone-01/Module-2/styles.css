@@ -1,0 +1,15 @@
+
+.blog{
+background-color: lightcoral;
+}
+
+h2{
+text-decoration: underline;
+}
+
+#second{
+background-color: aliceblue;
+/* display: none; */
+visibility: hidden;
+
+}

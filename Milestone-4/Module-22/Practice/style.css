@@ -1,0 +1,12 @@
+.h1{
+background-color: rgb(7, 125, 229);
+color: white;
+padding: 10px 0;
+text-align: center;
+}
+
+.ul{
+list-style-type: none;
+font-size: 1.3rem;
+color: blueviolet;
+}

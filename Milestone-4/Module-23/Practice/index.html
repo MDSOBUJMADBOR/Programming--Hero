@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+
+<!-- <button onclick="makeYellow()">Make yello</button>   
+<button id="btn-make-blue">Make Blue</button>
+<button id="btn-make-gold">Make Gold</button>
+<button id="btn-make-green">Make Green</button> -->
+
+<!-- 
+<h1 id="page-title">Event handler</h1>
+<button id="btn-update-title">Update title</button>
+
+<p id="user-info">No User</p>
+<button id="btn-login">Login</button> -->
+
+
+
+<!-- //handle input text -->
+<!-- <p id="name">No Name</p>
+<input id="input-name" type="text" placeholder="Your Name">
+<button id="btn-update">update</button>
+
+<script>
+document.getElementById('btn-update').addEventListener('click',function(){
+          const inputName=document.getElementById('input-name');
+          
+         const name = inputName.value;
+          
+       const nameP=document.getElementById('name');
+      nameP.innerText=name;
+
+      inputName.value='';
+}) 
+//---------------
+</script>-->
+<!-- 
+<div id="comment-container">
+<p class="comment">Lorem ipsum dolor sit.</p>
+<p class="comment">ipsum dolor sit.</p>
+</div>
+<textarea name="" id="comment-text-box" cols="30" rows="10"></textarea><br>
+<button id="btn-post-comment">Post comment</button>
+<script>
+document.getElementById('btn-post-comment').addEventListener('click',function(){
+const commentTextBox=document.getElementById('comment-text-box');
+const newComment=commentTextBox.value;
+
+const commentContainer=document.getElementById('comment-container');
+const commentElement=document.createElement('p');
+commentElement.innerText=newComment;
+
+commentContainer.appendChild(commentElement);
+
+commentTextBox.value='';
+})
+</script> -->
+
+
+
+
+
+<!-- <button id="btn-mouse">Micky mouse</button>
+<input type="text" name="" id="user-name" placeholder="Your Name ">
+<script>
+document.getElementById('user-name').addEventListener('keyup',function(event){
+console.log('typing',event.target.value)
+})
+</script> -->
+
+
+
+<!-- //github-delete -->
+<!-- <h1 id="secret-info">My Secret info</h1>
+<input type="text" id="input-delete" placeholder="Write delete">
+<button id="btn-delete"  disabled>Delete</button>
+
+<script>
+document.getElementById('input-delete').addEventListener('keyup',function(event){
+          const text = event.target.value;
+          const btnDelete = document.getElementById('btn-delete');
+          if(text === 'delete'){
+                    btnDelete.removeAttribute('disabled');
+
+          }
+          else{
+                     btnDelete.setAttribute('disabled',true)
+          }
+})
+</script> -->
+<!-- 
+<h1 id="secrite">Secrite info </h1>
+<input id="btn-input" type="text" placeholder="Write Now ">
+<button id="btn-delete" >Delete </button>
+<script>
+  document.getElementById('btn-input').addEventListener('keyup',function(event){
+const text = event.target.value;
+const btnDelete = document.getElementById('btn-delete');
+if(text==='delete'){
+    btnDelete.removeAttribute('disabled');
+    const secretTag=document.getElementById('secrite');
+    secretTag.style.display = 'none';
+     
+}
+else{
+ btnDelete.setAttribute('disabled',true);
+}
+
+  })
+</script> -->
+<!-- 
+
+<h1>Explore Event bubble</h1>
+<section id="list-container">
+     <h3>List of things</h3>
+        <ol id="item-list">
+            <li id="itme-1">sobuj</li>
+            <li id="itme-2">sathi</li>
+            <li id="itme-3">halima</li>
+            <li id="itme-4">Ikra</li>
+            <li id="itme-5">Morsalin</li>
+            <li id="itme-6">jothi</li>
+        </ol>
+</section>
+<script>
+  //li click
+document.getElementById('itme-2').addEventListener('click',function(event){
+  console.log('itme-2');
+   event.stopImmediatePropagation()
+})
+//ol click
+document.getElementById('item-list').addEventListener('click',function(event) {
+    console.log('item-list');
+    event.stopPropagation()
+})
+//section click
+document.getElementById('list-container').addEventListener('click',function(){
+  console.log('list-container')
+})
+</script>
+ -->
+<!-- 
+<h1>Explore the concept of Event Delegate</h1>
+<ol id="item-list">
+  <li class="item">My Awesome Item - 1</li>
+  <li class="item">My Awesome Item - 2</li>
+  <li class="item">My Awesome Item - 3</li>
+  <li class="item">My Awesome Item - 4</li>
+</ol>
+<button id="btn-add-item">Add new item</button>
+
+<script> -->
+<!-- //  const items = document.getElementsByClassName('item')
+//  for(const item of items){
+//  item.addEventListener('click',function(event){
+// console.log(event.target.parentNode.removeChild(event.target))
+// })
+//  }
+
+// document.getElementById('item-list').addEventListener('click',function(event){
+// console.log(event.target.parentNode.removeChild(event.target))
+// })
+  
+// document.getElementById('btn-add-item').addEventListener('click',function(){
+
+// const ol = document.getElementById('item-list');
+
+// const li = document.createElement('li');
+// li.innerText = 'Brand new item added';
+// ol.appendChild(li);
+
+// }) -->
+
+<!-- </script> -->
+
+
+<!-- 
+<h1>Dom Event summary </h1>
+<input id="name-input" type="text" placeholder="Your Name">
+<button id="add-name">Add Name</button>
+<div id="create-name">
+
+</div>
+<script>
+  document.getElementById('add-name').addEventListener('click',function(){
+   const nameInput=document.getElementById('name-input');
+   const inputValue=nameInput.value;
+   
+   const p=document.createElement('h1');
+   p.innerText =inputValue;
+nameInput.value='';
+const createName=document.getElementById('create-name');
+createName.appendChild(p);
+
+  })
+</script> -->
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>

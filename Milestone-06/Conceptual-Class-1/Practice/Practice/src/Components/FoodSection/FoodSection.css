@@ -1,0 +1,25 @@
+.foods-container-parent{
+width: 1200px;
+margin: 50px auto;
+display: flex;
+gap: 15px;
+}
+
+.foods-container{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+width: 75%;
+}
+.Order{
+padding: 8px 18px;
+margin: 10px;
+border-radius: 10px;
+cursor: pointer;
+}
+.Orderbtn{
+background-color: cyan;
+max-width: 25%;
+padding: 10px 50px;
+margin: 0 auto;
+}

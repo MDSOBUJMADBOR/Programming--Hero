@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    .products{
+                    display: flex;
+                    gap: 10px;
+                    }
+                    .product-cards{
+                    border: 2px solid black;
+                    padding: 10px;
+                    
+                    }
+          </style>
+</head>
+<body>
+<!-- <p id="count">0</p>
+<button id="btn">Click Me </button>
+
+<script>
+const btn = document.getElementById('btn');
+const countText = document.getElementById('count');
+btn.addEventListener('click',function(){
+let currentCount = parseInt(countText.innerText);
+currentCount++;
+countText.innerText = currentCount;
+
+})
+</script> -->
+
+<div class="products">
+          <div class="product-cards">
+                    <img src="" alt="">
+                    <h3 class="category-name">Electronics</h3>
+                    <h1 class="product-name">Smart Watch</h1>
+                    <div class="product-footer">
+                              <span class="product-price">2500</span>
+                              <button class="wishlist-btn-card">Click ❤️</button><br><br>
+                    </div>
+                    <button class="add-to-cart-btn">Add to card</button>
+
+          </div>
+          <div class="product-cards">
+                    <img src="" alt="">
+                    <h3 class="category-name">Electronics</h3>
+                    <h1 class="product-name">Smart TV</h1>
+                    <div class="product-footer">
+                              <span class="product-price">2000</span>
+                              <button class="wishlist-btn-card">Click ❤️</button><br><br>
+                    </div>
+                    <button class="add-to-cart-btn">Add to card</button>
+
+          </div>
+</div>
+
+<p id="wishCount">0</p>
+<div id="cartItems"></div>
+
+<div>
+          <p id="cartCount">0</p>
+          <p id="totalPrice">0</p>
+</div>
+<script>
+const wishListBtn = document.querySelectorAll('.wishlist-btn-card');
+count = 0;
+for(let btn of wishListBtn){
+btn.addEventListener('click',function(){
+let wishCount = document.getElementById('wishCount');
+count++;
+wishCount.innerText = count;   
+          })
+}
+//-------------------
+const buttons = document.querySelectorAll('.add-to-cart-btn');
+let cart =[];
+for(let btn1 of buttons){
+btn1.addEventListener('click', function (e) {
+const card =e.target.closest('.product-cards');
+// console.log(card)
+const ProductName = card.querySelector('.product-name').textContext;
+const Price = card.querySelector('.product-price').textContext;
+const Category = card.querySelector('.category-name').textContext;
+
+const product = {
+          name:ProductName,
+          productPrice:Price,
+          productCategory:Category,
+          quantity:1,
+};
+addToCart(product);
+
+})
+
+}
+console.log(product)
+
+function addToCart(product){
+const existingItem = card.find((item) => item.name == product.name);
+// console.log(existingItem)
+}
+
+
+</script>
+
+</body>
+</html>

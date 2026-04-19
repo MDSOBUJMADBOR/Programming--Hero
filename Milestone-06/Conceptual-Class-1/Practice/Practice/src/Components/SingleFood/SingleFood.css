@@ -1,0 +1,16 @@
+
+.cart{
+border: 2px solid red;
+padding: 20px;
+border-radius: 10px;
+}
+.cart img{
+width: 100%;
+}
+
+.add-to-cart{
+padding: 8px 12px;
+border-radius: 10px;
+cursor: pointer;
+/* background-color: rgb(35, 142, 236); */
+}

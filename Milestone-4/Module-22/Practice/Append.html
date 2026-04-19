@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main id="main-container">
+
+</main>      
+
+<script>
+// const mainContainer=document.getElementById('main-container')
+
+// //create section
+// const placesSection=document.createElement('section')
+// mainContainer.appendChild(placesSection)
+
+// //create h1
+// const h1 =document.createElement('h1')
+// // h1.style.textAlign='center'; 
+// h1.classList.add('h1')
+// h1.innerText='i am sobuj madbor'
+// placesSection.appendChild(h1)
+
+// // create ul
+// const ul=document.createElement('ul')
+// placesSection.appendChild(ul)
+// ul.classList.add('ul')
+// // create li 
+// const  li1 =document.createElement('li')
+// li1.innerText ='sobuj';
+// ul.appendChild(li1);
+// const li2=document.createElement('li')
+// li2.innerText='sathi';
+// ul.appendChild(li2);
+
+
+// create html
+const mainContainer=document.getElementById('main-container')
+
+const booksSection=document.createElement('section')
+
+booksSection.innerHTML=`
+<h1>i am sobuj madbor</h1>
+<ul>
+<li>sobuj</li>
+<li>sathi</li>
+</ul>
+`;
+mainContainer.appendChild(booksSection)
+</script>     
+</body>
+</html>
