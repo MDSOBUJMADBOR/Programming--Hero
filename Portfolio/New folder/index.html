@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rakib Hasan | Portfolio</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#4F46E5',
+              purple: '#7C3AED',
+              dark: '#0B0D17',
+              surface: '#161B22',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    body {
+      background-color: #f8fafc;
+      color: #1e293b;
+      font-family: 'Inter', sans-serif;
+    }
+    .dark-section {
+      background-color: #0b0d17;
+      color: white;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #4F46E5, #7C3AED);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-bg {
+      background-image: radial-gradient(circle at 80% 20%, rgba(79, 70, 229, 0.08) 0%, transparent 40%);
+    }
+    .skill-circle {
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<div class="flex items-center">
+<span class="text-2xl font-bold text-gray-900">Rakib Hasan</span>
+</div>
+<!-- Desktop Menu -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium text-brand-blue border-b-2 border-brand-blue pb-1" href="#home">Home</a>
+<a class="text-sm font-medium text-gray-600 hover:text-brand-blue transition" href="#about">About</a>
+<a class="text-sm font-medium text-gray-600 hover:text-brand-blue transition" href="#tech-stack">Tech Stack</a>
+<a class="text-sm font-medium text-gray-600 hover:text-brand-blue transition" href="#skills">Skills</a>
+<a class="text-sm font-medium text-gray-600 hover:text-brand-blue transition" href="#education">Education</a>
+<a class="text-sm font-medium text-gray-600 hover:text-brand-blue transition" href="#projects">Projects</a>
+<a class="text-sm font-medium text-gray-600 hover:text-brand-blue transition" href="#contact">Contact</a>
+</div>
+<div class="flex items-center">
+<a class="bg-brand-blue text-white px-6 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 hover:bg-opacity-90 transition shadow-lg shadow-brand-blue/20" href="#">
+          Download CV <i class="fa-solid fa-download"></i>
+</a>
+</div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<main class="pt-20">
+<!-- BEGIN: HeroSection -->
+<section class="relative min-h-[90vh] flex items-center hero-bg overflow-hidden" id="home">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid md:grid-cols-2 gap-12 items-center">
+<!-- Left Content -->
+<div data-purpose="hero-content">
+<span class="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-brand-blue text-xs font-bold uppercase tracking-wider mb-6">
+            Web Developer
+          </span>
+<h1 class="text-5xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
+            Hi, I'm <span class="gradient-text">Rakib Hasan</span>
+</h1>
+<h2 class="text-3xl font-bold text-gray-800 mb-6">
+            I build modern, responsive websites &amp; web applications
+          </h2>
+<p class="text-lg text-gray-600 mb-10 max-w-lg leading-relaxed">
+            Passionate Web Developer creating fast, scalable &amp; user-friendly digital experiences with clean code.
+          </p>
+<div class="flex flex-wrap gap-4 items-center">
+<button class="bg-brand-blue text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:translate-y-[-2px] transition shadow-xl shadow-brand-blue/25">
+              Hire Me <i class="fa-solid fa-arrow-right"></i>
+</button>
+<button class="bg-white border border-gray-200 text-gray-800 px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-gray-50 transition">
+              View My Work <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+<div class="mt-8 flex items-center gap-2 text-sm text-gray-500">
+<div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            Available for freelance
+          </div>
+<!-- Social Links -->
+<div class="mt-8 flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 text-gray-600 hover:text-brand-blue hover:border-brand-blue transition" href="#"><i class="fa-brands fa-github"></i></a>
+<a class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 text-gray-600 hover:text-brand-blue hover:border-brand-blue transition" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+<a class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 text-gray-600 hover:text-brand-blue hover:border-brand-blue transition" href="#"><i class="fa-brands fa-twitter"></i></a>
+<a class="w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 text-gray-600 hover:text-brand-blue hover:border-brand-blue transition" href="#"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+<!-- Right Content - Profile Image Placeholder -->
+<div class="relative flex justify-center items-center" data-purpose="hero-image">
+<!-- Abstract Background Shapes -->
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-blue/10 rounded-full blur-3xl"></div>
+</div>
+<div class="relative z-10">
+<img alt="Rakib Hasan" class="w-full max-w-md object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uj39VkVEbtRLIXcSuwM1xNubPZX38GL-LJ8rL8oTQ1YrnkSZgvwo_Y5ZuGnRihfMhmRdZ-ALcaiUf6rBiSCfTc-hEVwILYkiBLfdCg33Rjl7olsq7mZNeAzKECPGiYfdQyzHZ-DeQ6yKCGsHxA2bm0ShGB1rwUI5bXW03CGlh89aNvRwyIpmyOUxZGLHRvfMOq40CWbb1KT4C6uFD3pzDAWwAZGjdqK3C7XVs2uS7uofenH6FjWVACQDqCPTrPInNerXONqhR0" style="clip-path: inset(0 0 50% 0);"/>
+<!-- Mock Floating Tech Icons based on image -->
+<div class="absolute top-10 right-0 bg-white p-3 rounded-2xl shadow-xl animate-bounce"><img alt="React" class="w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1abPYrWdUQTmQgedm0vU2f0p5qBt2h-X7NwpEwDd-0v9S2dBbQXNN7xKg_yepYleEWiSM0FVpc7qFzY1jxZNlkpOu-sz8dlmhEho316xEx2CQKFSjaXd8ay959Iu1uOti7uuI3evp-87A74FIee-TeRC6iQ3fGMH_dnK6nv6aD5KChKiPtJfxntRvXIC2aBkUahp1OlAYrQeLkiK-6Xq7cveVQX0OnI4oVy512CzhFsbbo0AINxIIdx9qjuV3SK7PHjj2pEqOvQ"/></div>
+<div class="absolute bottom-1/2 -left-10 bg-white p-3 rounded-2xl shadow-xl"><img alt="Node" class="w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCM-_GGs-Ni-kBb8taoMOvEiKR7FzRpfzL8hF2gw_Uz8XRK--jJXHK1kuDrilZju4hZ_PLkGoDgwR9pUo2Kz1zRv0jiyQwOXkVxyxE9QaSrCCYCwDsjHXAciI0bBmgqoVglWArtmwWEjN7m-oa5DxMHMPU4Bt8LC4ejBETagIVPFjG0zW0aV2Z4FSlo2yNXnY9ArseMb3S1CoTmWmBbgBEcKgTFcVbuqeTfvvQl5jGVVOJa7zv6qUPxlDYOc6YU0_L6TXqM1UL6g"/></div>
+<div class="absolute top-1/4 -left-4 bg-white p-3 rounded-2xl shadow-xl"><img alt="HTML" class="w-8 h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWnzy1-ppCXTvHcHpi7EDMt_AiB1z1juqlcKM1TJTP_uBU3oGrv3OU_9e5NsfsRWXdCo7ry3W_qXgWzKOCjtjRTsYeV4AVFCrfaf0GCTCCZPDGZwu0-V61fIQNl4diMoJV78uPHWXQR8MitCuFdFYLwP6simYYXm-PVZDnFJIKgxBmAqyhB0KVCtwhSfTgTnxRgIdI4R8fTKhYrgsZBBjGvkH3oyzvmryM0jTq2mAoGJ1BZr_kysyyCkfjxMAN9jCQu3H5IKwi1w"/></div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: StatsSection -->
+<section class="py-12 -mt-16 relative z-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white rounded-[2rem] shadow-2xl shadow-gray-200/50 grid grid-cols-2 lg:grid-cols-4 gap-8 p-8 lg:p-12">
+<div class="flex items-center gap-6 border-r border-gray-100 last:border-0">
+<div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-brand-blue text-2xl">
+<i class="fa-regular fa-face-smile"></i>
+</div>
+<div>
+<div class="text-3xl font-bold text-gray-900">1+</div>
+<div class="text-sm text-gray-500">Years Experience</div>
+</div>
+</div>
+<div class="flex items-center gap-6 border-r border-gray-100 last:border-0">
+<div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-brand-blue text-2xl">
+<i class="fa-solid fa-briefcase"></i>
+</div>
+<div>
+<div class="text-3xl font-bold text-gray-900">15+</div>
+<div class="text-sm text-gray-500">Projects Completed</div>
+</div>
+</div>
+<div class="flex items-center gap-6 border-r border-gray-100 last:border-0">
+<div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-brand-blue text-2xl">
+<i class="fa-solid fa-users"></i>
+</div>
+<div>
+<div class="text-3xl font-bold text-gray-900">10+</div>
+<div class="text-sm text-gray-500">Happy Clients</div>
+</div>
+</div>
+<div class="flex items-center gap-6 border-r border-gray-100 last:border-0">
+<div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-brand-blue text-2xl">
+<i class="fa-solid fa-award"></i>
+</div>
+<div>
+<div class="text-3xl font-bold text-gray-900">2+</div>
+<div class="text-sm text-gray-500">Certifications</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: StatsSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-24" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+<!-- Image Card -->
+<div class="relative">
+<div class="rounded-3xl overflow-hidden shadow-2xl relative">
+<img alt="About Rakib" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uj39VkVEbtRLIXcSuwM1xNubPZX38GL-LJ8rL8oTQ1YrnkSZgvwo_Y5ZuGnRihfMhmRdZ-ALcaiUf6rBiSCfTc-hEVwILYkiBLfdCg33Rjl7olsq7mZNeAzKECPGiYfdQyzHZ-DeQ6yKCGsHxA2bm0ShGB1rwUI5bXW03CGlh89aNvRwyIpmyOUxZGLHRvfMOq40CWbb1KT4C6uFD3pzDAWwAZGjdqK3C7XVs2uS7uofenH6FjWVACQDqCPTrPInNerXONqhR0" style="clip-path: inset(20% 0 30% 0); transform: scale(1.5);"/>
+<div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-4 rounded-2xl shadow-lg">
+<div class="text-xs text-gray-500 font-semibold mb-1">Based in</div>
+<div class="flex items-center gap-2 text-sm font-bold text-gray-900">
+<i class="fa-solid fa-location-dot text-brand-blue"></i> Dhaka, Bangladesh
+              </div>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -z-10 -top-6 -left-6 w-full h-full border-2 border-brand-blue/20 rounded-3xl"></div>
+</div>
+<!-- Content -->
+<div>
+<span class="text-brand-blue font-bold text-sm uppercase tracking-wider">About Me</span>
+<h2 class="text-4xl font-bold text-gray-900 mt-4 mb-6 leading-tight">
+            Crafting digital experiences<br/>that make an <span class="border-b-4 border-brand-blue">impact</span>
+</h2>
+<p class="text-gray-600 mb-8 leading-relaxed">
+            I'm a dedicated Web Developer with a passion for building high-quality, performant web applications. I specialize in creating seamless user experiences with modern technologies and best practices.
+          </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-3 bg-blue-50/50 p-3 rounded-xl border border-blue-100">
+<i class="fa-solid fa-check text-brand-blue"></i>
+<span class="text-sm font-semibold text-gray-700">Clean Code</span>
+</div>
+<div class="flex items-center gap-3 bg-blue-50/50 p-3 rounded-xl border border-blue-100">
+<i class="fa-solid fa-check text-brand-blue"></i>
+<span class="text-sm font-semibold text-gray-700">Pixel Perfect</span>
+</div>
+<div class="flex items-center gap-3 bg-blue-50/50 p-3 rounded-xl border border-blue-100">
+<i class="fa-solid fa-check text-brand-blue"></i>
+<span class="text-sm font-semibold text-gray-700">Responsive</span>
+</div>
+<div class="flex items-center gap-3 bg-blue-50/50 p-3 rounded-xl border border-blue-100">
+<i class="fa-solid fa-check text-brand-blue"></i>
+<span class="text-sm font-semibold text-gray-700">Performance</span>
+</div>
+</div>
+<div class="flex gap-4 items-center mb-10">
+<button class="bg-brand-blue text-white px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition">
+              Download CV <i class="fa-solid fa-download"></i>
+</button>
+<button class="text-gray-800 font-bold flex items-center gap-2 hover:text-brand-blue transition">
+              More About Me <i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+<!-- Contact Details Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8 border-t border-gray-100">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-brand-blue">
+<i class="fa-regular fa-user"></i>
+</div>
+<div>
+<div class="text-xs text-gray-400 font-medium">Name</div>
+<div class="text-sm font-bold text-gray-900">Rakib Hasan</div>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-brand-blue">
+<i class="fa-regular fa-envelope"></i>
+</div>
+<div>
+<div class="text-xs text-gray-400 font-medium">Email</div>
+<div class="text-sm font-bold text-gray-900">rakibhasan@example.com</div>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-brand-blue">
+<i class="fa-solid fa-phone"></i>
+</div>
+<div>
+<div class="text-xs text-gray-400 font-medium">Phone</div>
+<div class="text-sm font-bold text-gray-900">+880 1234-567890</div>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-gray-50 rounded-lg text-brand-blue">
+<i class="fa-solid fa-briefcase"></i>
+</div>
+<div>
+<div class="text-xs text-gray-400 font-medium">Freelance</div>
+<div class="text-sm font-bold text-green-500">Available</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: TechStack -->
+<section class="py-24 bg-gray-50" id="tech-stack">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl font-bold text-gray-900 mb-2">Tech Stack</h2>
+<p class="text-gray-500 mb-16">Technologies I work with</p>
+<div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-6">
+<!-- Icon Item -->
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group border border-gray-100">
+<img alt="HTML" class="w-12 h-12 mx-auto grayscale group-hover:grayscale-0 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkN3AoalHaJN5sTncWxy6BcBqiUkyCF3gicTTBxSGeH4yqrNo8InETQcxXHmSV-mS0rGGy97_f-S5kGX__66U5j8KPBBou6JNEUg1ECEoZmlfFYioqzocGYPwzg6u_E2zc7zM3h1HWcSXoa5aojywsst2DsKjL5z3Yt_2h-fy7xrsZ3EChhfRUvnEIZBiSWoyIF6fP_BFVVY0WrR78AouzJLSLfvvFIndFs1Ap0x7dp_ufyP5ha57mm6S6_uxL8Imc5ApMn2j8IQ"/>
+<p class="mt-4 text-xs font-bold text-gray-400 group-hover:text-gray-900">HTML</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group border border-gray-100">
+<img alt="CSS" class="w-12 h-12 mx-auto grayscale group-hover:grayscale-0 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPHWgzPYGvbsTX1CzK3LyPlNqaTqYJ8hBfdpRBbTcGn39hUakd6bB-SRARMM9EJOu00Ec7GgqLkc0nBYah9gCWY6n2oSRik15_e6OVD_o6NY-llGbouIW0DVCSBCGNjkKhEivkEz0EAaOpbFPMtyqiSBATafkQNXLDplX7gALfwB4e0SY7MT59ajdAHD69GxOXIwfTBAwgLsiRfeLKAuiNl3nnIUvQUinwTUgJgcAW4tWZtzmjngMc8czsxIzSaftZKVztkRFHmA"/>
+<p class="mt-4 text-xs font-bold text-gray-400 group-hover:text-gray-900">CSS</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group border border-gray-100">
+<img alt="JS" class="w-12 h-12 mx-auto grayscale group-hover:grayscale-0 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqBAgVFcGtn4QDzCevi21dcOkSWZA7PrIxwOgL0gIxTWTVDFoOPI0TJgkAZ5qHMzmWS1lvbMvOArFjNjNn85K-3NNePw4hHZgm5dtEFb1lzXJo42AmSKSVrHTV8GmKSgRtkL8zT6VpKpCAjfK-VZw7fTU8pX93AY0IXkzq8F_fA7pnYVOaf7lQU2Rz0n0BJm-yWWiLiU9IxbMJo0wVpI-ywdCOIRIwHvUfgluipyAdX2ZcgMrzjNBpsZMBvUuGBRQ8PQrsF9jFAg"/>
+<p class="mt-4 text-xs font-bold text-gray-400 group-hover:text-gray-900">JavaScript</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group border border-gray-100">
+<img alt="React" class="w-12 h-12 mx-auto grayscale group-hover:grayscale-0 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfrAMZrhsLU9CfVSNqQjy7PRKGgwaSB8sRzjG_iY1E5yLz3SPQKkYe8wE003lzHzWDj4oGeI7GZOKKsJCT57S4_Ng3Sp0OR4Si-j_LsVGjAxdmPTb6l8hgYNsamyDdzlNdeNnuxIcIpg1-vrmpRvgIn1BSMbgwBhDD_1yptLRXG9M3bWWE4j0_HIoKKiYhfyz2gwX8yAqT-s8P8sjneGx-O6FHi-Z9SFm__bQ6gRBO2KZY40O-9ZiF3xnHmtA70QpVk4ROFhLnhQ"/>
+<p class="mt-4 text-xs font-bold text-gray-400 group-hover:text-gray-900">React</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group border border-gray-100">
+<img alt="Next" class="w-12 h-12 mx-auto grayscale group-hover:grayscale-0 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2wWxwjOAW4gYavK5zpLwcR9_waLmN1Q-rjidhceT12eeaeq0Tu_vFpnRSg7GFEcPH6ruOsKQ4JJ2Lh837JKkrS4O3jRW5aiVmPfEQgFmiDRGs_8egMYQziUVDrWZHrjG3ApAyYdb4yl6CiHlrfwF70cl6TwWPGxlcJLiV5Qs2Ouqz8a0x1nvgT9A63gd_f4GAoc4E1aXQEy9dODf5vnJJaqLExUglnr5LcmHP_EN68DdbKkEG82IRs_QBEcFSrdDujO62_WQTUQ"/>
+<p class="mt-4 text-xs font-bold text-gray-400 group-hover:text-gray-900">Next.js</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group border border-gray-100">
+<img alt="Node" class="w-12 h-12 mx-auto grayscale group-hover:grayscale-0 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuR4d8lutSWsY1fy29RI7ZC6ZtxzzOfFmLDO8GdJDGD_v8sXfMi8Pgg9OA7otQ17xcuPrOyvFrmeITTiKm9sBq6P0OBSL4qpUmbPPYFnZkS7mXsoK1XCoHSY92_tWm3lvoezea9DkzWOIDgaHDyIvgZZ4OBgFH3gxH2_m7s2OWPbLylC115I6cCRDNbHkpiRYpy7ZOODkR0OMDDit8LBhLqBmX-v7ImODf3YxEQ8gbaHZTKL7vGOip5cU4czOOrmw795btWjDO4g"/>
+<p class="mt-4 text-xs font-bold text-gray-400 group-hover:text-gray-900">Node.js</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group border border-gray-100">
+<img alt="Express" class="w-12 h-12 mx-auto grayscale group-hover:grayscale-0 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQRhe6MCT3wU824ufZfj4QFLTQFEUhroa387DnyOYzEoUAD1rxIn_KmN4N9lcdWfoDs64Bz1sE4-ZI8s5w3M1Ng4jAFAbO3PlKWthc7Iq3PaPXUicgrQ2cm10SQmNb-DcvIM21UfM1LiGGxuhBbaxblPXnty3gRT0jc5vqWFRR5Wtu7cdDtmhsUp7FhgRi1XFgLJUrAyaMapi_XeIC0NpgLmpaD3SSTVpSkrCLzQxRk3Jj0nZ32zabZc8nDA2EmnjigTAPdLABgw"/>
+<p class="mt-4 text-xs font-bold text-gray-400 group-hover:text-gray-900">Express.js</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group border border-gray-100">
+<img alt="Mongo" class="w-12 h-12 mx-auto grayscale group-hover:grayscale-0 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpDu2GieStyPrmu9NqN_uizG3fpcqtfmNoGcETaFZ-TNINF7UyQCkHHKLkvJy_lHkjS8SV8j1JcDhi8_TKzfC_LdNsT7QLHjhnAuQscuY8BZW1jjDvJ2jAlvEor683KRiJi-1YEL-PumXNF5QmkiwRovsNgXdUBiQ2SybX9Ah9aXdXiVstAvEbJXMWOesRwMxM0xQ7N3O3P8WZ8WBKbNPc09hiUgE5UXA76AE1YeX-r_zl0uq4q90qgZRr29x4H15zSEfkx39Kow"/>
+<p class="mt-4 text-xs font-bold text-gray-400 group-hover:text-gray-900">MongoDB</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group border border-gray-100">
+<img alt="Tailwind" class="w-12 h-12 mx-auto grayscale group-hover:grayscale-0 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJaim7d8b-3lWdHSNIdLax_F0ozVKkfhCGFM4Epv8hV09M1SImyEpfMtOxGf6UN_M4Ad_xRwETHDxixPUt1mm2k2VGsHP4V7keo-7iSHAbpm10eRZ_8HteOlMxD3rcmicIpSLDfm_JRZnDn-17Xt4d4ER3-pzqXmN4nYhGJjdvX9HKSBS03pKLS1UhcR5KGbFx5RFSQ-PWtXMpNL9GpDBpEETCIABdegzrWqD76HNsPeTVECqGohhrhvoBW8d47FSJeN0sygVvKQ"/>
+<p class="mt-4 text-xs font-bold text-gray-400 group-hover:text-gray-900">Tailwind</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition group border border-gray-100">
+<img alt="Git" class="w-12 h-12 mx-auto grayscale group-hover:grayscale-0 transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYf53MA-8IajA-SA48qmCjK__zhlNhrZWYQ1K2NGFsvdpF6I-tGBO1soxvsUFmYJU6kF2U8nGKlniNokFJQ2ov_zjcRxiz3k4Cna8Vkj6lDwUQpgzsR4lW4jx0THHx45sQm5tkfkj4oGMKsOfZ9O_2aSu2j9oGRXNZUh7skpf5m5Adsl-oeDnYihTil9bYnRR5zlT2T2RsS1Bq4HJ99b7O0lKAAA9tCi05W3KRuAvibJxkFMO77yzSj7pu1BpO3pHjfH7n_ZOPCw"/>
+<p class="mt-4 text-xs font-bold text-gray-400 group-hover:text-gray-900">Git</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TechStack -->
+
+
+
+
+<!-- BEGIN: SkillsAndEducation -->
+<section class="py-24 dark-section overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-20">
+<!-- Skills Column -->
+<div id="skills">
+<h2 class="text-3xl font-bold mb-2">My Skills</h2>
+<p class="text-gray-400 mb-12">Professional skills &amp; proficiency</p>
+<div class="space-y-8">
+<!-- Skill Bar -->
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-sm font-semibold">HTML &amp; CSS</span>
+<span class="text-sm text-gray-400">95%</span>
+</div>
+<div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+<div class="h-full bg-brand-blue" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-sm font-semibold">JavaScript</span>
+<span class="text-sm text-gray-400">90%</span>
+</div>
+<div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+<div class="h-full bg-brand-blue" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-sm font-semibold">React</span>
+<span class="text-sm text-gray-400">88%</span>
+</div>
+<div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+<div class="h-full bg-brand-blue" style="width: 88%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-sm font-semibold">Node.js</span>
+<span class="text-sm text-gray-400">85%</span>
+</div>
+<div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+<div class="h-full bg-brand-blue" style="width: 85%"></div>
+</div>
+</div>
+</div>
+<!-- Circular Charts -->
+<div class="mt-16 flex justify-between">
+<div class="text-center">
+<div class="w-20 h-20 rounded-full border-4 border-brand-blue flex items-center justify-center text-xl font-bold mb-4">90%</div>
+<p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Problem<br/>Solving</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 rounded-full border-4 border-brand-blue flex items-center justify-center text-xl font-bold mb-4">85%</div>
+<p class="text-xs font-bold text-gray-400 uppercase tracking-widest">UI/UX<br/>Design</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 rounded-full border-4 border-brand-blue flex items-center justify-center text-xl font-bold mb-4">88%</div>
+<p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Performance</p>
+</div>
+</div>
+</div>
+<!-- Education Column -->
+<div id="education">
+<div class="flex items-center gap-3 mb-2">
+<i class="fa-solid fa-graduation-cap text-brand-blue text-2xl"></i>
+<h2 class="text-3xl font-bold">Education</h2>
+</div>
+<p class="text-gray-400 mb-12">My academic background</p>
+<div class="relative pl-8 border-l border-gray-800 space-y-12">
+<div class="relative">
+<div class="absolute -left-[37px] top-0 w-4 h-4 rounded-full bg-brand-blue border-4 border-brand-dark"></div>
+<div class="bg-gray-900/50 p-8 rounded-3xl border border-gray-800">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-xs font-bold text-brand-blue uppercase">2019 — 2023</span>
+<h3 class="text-xl font-bold mt-2">B.Sc. in Computer Science &amp; Engineering</h3>
+<p class="text-gray-400 text-sm mt-1">Daffodil International University</p>
+</div>
+<div class="bg-gray-800 px-3 py-1 rounded text-xs font-bold">CGPA: 3.45 / 4.00</div>
+</div>
+<ul class="space-y-3 text-sm text-gray-400">
+<li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-blue"></i> Data Structures &amp; Algorithms</li>
+<li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-blue"></i> Web Development</li>
+<li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-blue"></i> Database Management</li>
+<li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-blue"></i> Software Engineering</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SkillsAndEducation -->
+
+
+
+
+
+
+<!-- BEGIN: ProjectsSection -->
+<section class="py-24" id="projects">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-3xl font-bold text-gray-900 mb-2">Featured Projects</h2>
+<p class="text-gray-500">Some of my recent work</p>
+</div>
+<a class="text-brand-blue font-bold flex items-center gap-2 hover:underline" href="#">
+            View All Projects <i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-gray-100 project-card">
+<div class="relative h-60 overflow-hidden">
+<img alt="Project 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6H8ecltpUW6EXNkuQQcpt7s_0ymonabagwqsMkHOVLBZr_k9GLRqTdTbcP7KrZKIx-AZspPjvqUlARDwyVt9SOXYLK1u_sOp0jM8QPBqc_1S-1u77om-TCOfouYeNoyO86HMT7LmhPjO8y-jU-9tMP2rrU5b1Rv0mh988TXbBoGVl7VftZ9z1pcaPzArZdoFMpm5CJbwZmF0PMhoN5qJkdXfR5a6ih4JDu7bEizyXjQ_FaAYQCO25IPyIufscoXlidGhmi_7zjA"/>
+<div class="absolute inset-0 bg-brand-blue/80 opacity-0 project-overlay flex items-center justify-center gap-4 transition duration-300">
+<a class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-blue" href="#"><i class="fa-solid fa-link"></i></a>
+<a class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-blue" href="#"><i class="fa-brands fa-github"></i></a>
+</div>
+<span class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Full Stack</span>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold text-gray-900 mb-3">E-commerce Website</h3>
+<p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                A modern e-commerce platform with MERN stack, authentication &amp; payment integration.
+              </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-blue-50 text-brand-blue text-[10px] font-bold rounded-lg">React</span>
+<span class="px-3 py-1 bg-blue-50 text-brand-blue text-[10px] font-bold rounded-lg">Node.js</span>
+<span class="px-3 py-1 bg-blue-50 text-brand-blue text-[10px] font-bold rounded-lg">MongoDB</span>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-gray-100 project-card">
+<div class="relative h-60 overflow-hidden">
+<img alt="Project 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzKyJl6qwrjIqtrHiv2HBBCseW0dHCfWvhcY8QeSSPI9FovjjbTqDy3o42Vz-sYI8tqbHO9AMZJYB6bEzhNJDO99WgTjGv1yJr53DIPVS_3a7TUYLPJNwQ-icKEZMRgpGsZhRWB9QfHe-gIcBUWAgtd367dNNVpG9zO_zkV9RbIrwvkgMUcUppC2_fmIXmHzx0xvnlNnkWjQAz0B1J9C-gwPwwDENazmVK_ooKvvpNEurb7Gx-V6-KkU2WWvdpdQRn8XpO1iluxw"/>
+<div class="absolute inset-0 bg-brand-blue/80 opacity-0 project-overlay flex items-center justify-center gap-4 transition duration-300">
+<a class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-blue" href="#"><i class="fa-solid fa-link"></i></a>
+<a class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-blue" href="#"><i class="fa-brands fa-github"></i></a>
+</div>
+<span class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Web App</span>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Task Management App</h3>
+<p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                A productivity app to manage tasks, teams, and deadlines with real-time updates.
+              </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-blue-50 text-brand-blue text-[10px] font-bold rounded-lg">React</span>
+<span class="px-3 py-1 bg-blue-50 text-brand-blue text-[10px] font-bold rounded-lg">Tailwind CSS</span>
+<span class="px-3 py-1 bg-blue-50 text-brand-blue text-[10px] font-bold rounded-lg">Node.js</span>
+</div>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-gray-100 project-card">
+<div class="relative h-60 overflow-hidden">
+<img alt="Project 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7rmEkC7P9WQ6Ysun1EUfFNDVvNdpHfTaEStzIFcbaiN6Ax_Vwxf0q0kF1fIijTdMlKCE8b33wBsYCibqHGi5CXxYLpWAHX9cB_nDttVeTmkMYAIPDH6V8Gm9jHPZlBe8TYs2rRttqG1MWSbgJ5uVNja-kupWnDY4Ntw_fLuxEVkYyTSrzjvgZ4CuO5QXIwMEndh03K9oHkjDoVOGq7bXdz4TImWS7fEau15acEEMFUE2f6Xe32LjT6mN0hb-OSpmpI50bIVT7Dw"/>
+<div class="absolute inset-0 bg-brand-blue/80 opacity-0 project-overlay flex items-center justify-center gap-4 transition duration-300">
+<a class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-blue" href="#"><i class="fa-solid fa-link"></i></a>
+<a class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-blue" href="#"><i class="fa-brands fa-github"></i></a>
+</div>
+<span class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Portfolio</span>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold text-gray-900 mb-3">Portfolio Website</h3>
+<p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                A fully responsive portfolio website to showcase projects &amp; skills with modern UI/UX.
+              </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-blue-50 text-brand-blue text-[10px] font-bold rounded-lg">HTML</span>
+<span class="px-3 py-1 bg-blue-50 text-brand-blue text-[10px] font-bold rounded-lg">CSS</span>
+<span class="px-3 py-1 bg-blue-50 text-brand-blue text-[10px] font-bold rounded-lg">JavaScript</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ProjectsSection -->
+<!-- BEGIN: ContactSection -->
+<section class="py-24 bg-gray-50" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-brand-dark rounded-[3rem] overflow-hidden grid lg:grid-cols-2">
+<!-- Form -->
+<div class="p-12 lg:p-20">
+<h2 class="text-4xl font-bold text-white mb-6">Let's Work Together</h2>
+<p class="text-gray-400 mb-10">Have a project in mind? I'm available for freelance work.</p>
+<form class="space-y-6">
+<div class="grid sm:grid-cols-2 gap-6">
+<div>
+<input class="w-full bg-gray-900 border-gray-800 rounded-xl px-6 py-4 text-white focus:ring-brand-blue focus:border-brand-blue transition" placeholder="Your Name" type="text"/>
+</div>
+<div>
+<input class="w-full bg-gray-900 border-gray-800 rounded-xl px-6 py-4 text-white focus:ring-brand-blue focus:border-brand-blue transition" placeholder="Your Email" type="email"/>
+</div>
+</div>
+<div>
+<textarea class="w-full bg-gray-900 border-gray-800 rounded-xl px-6 py-4 text-white focus:ring-brand-blue focus:border-brand-blue transition" placeholder="Message" rows="4"></textarea>
+</div>
+<button class="w-full bg-brand-blue text-white py-4 rounded-xl font-bold text-lg hover:bg-opacity-90 transition flex items-center justify-center gap-2">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+</button>
+</form>
+</div>
+<!-- Info -->
+<div class="bg-brand-blue/5 p-12 lg:p-20 flex flex-col justify-center border-l border-gray-800">
+<div class="space-y-12">
+<div class="flex items-start gap-6">
+<div class="w-14 h-14 bg-brand-blue/10 rounded-2xl flex items-center justify-center text-brand-blue text-2xl">
+<i class="fa-regular fa-envelope"></i>
+</div>
+<div>
+<div class="text-sm text-gray-400 mb-1">Email</div>
+<div class="text-xl font-bold text-white">rakibhasan@example.com</div>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-14 h-14 bg-brand-blue/10 rounded-2xl flex items-center justify-center text-brand-blue text-2xl">
+<i class="fa-solid fa-phone"></i>
+</div>
+<div>
+<div class="text-sm text-gray-400 mb-1">Phone</div>
+<div class="text-xl font-bold text-white">+880 1234-567890</div>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-14 h-14 bg-brand-blue/10 rounded-2xl flex items-center justify-center text-brand-blue text-2xl">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+<div>
+<div class="text-sm text-gray-400 mb-1">Location</div>
+<div class="text-xl font-bold text-white">Dhaka, Bangladesh</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ContactSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-brand-dark text-white py-12 border-t border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-code text-brand-blue text-2xl"></i>
+<span class="text-2xl font-bold uppercase">Rakib Hasan</span>
+</div>
+<nav class="flex flex-wrap justify-center gap-8 text-sm font-medium text-gray-400">
+<a class="hover:text-white transition" href="#home">Home</a>
+<a class="hover:text-white transition" href="#about">About</a>
+<a class="hover:text-white transition" href="#tech-stack">Tech Stack</a>
+<a class="hover:text-white transition" href="#skills">Skills</a>
+<a class="hover:text-white transition" href="#education">Education</a>
+<a class="hover:text-white transition" href="#projects">Projects</a>
+<a class="hover:text-white transition" href="#contact">Contact</a>
+</nav>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-brand-blue transition" href="#"><i class="fa-brands fa-github"></i></a>
+<a class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-brand-blue transition" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+<a class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-brand-blue transition" href="#"><i class="fa-brands fa-twitter"></i></a>
+<a class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-brand-blue transition" href="#"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+<p>© 2024 Rakib Hasan. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>

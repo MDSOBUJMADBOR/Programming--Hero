@@ -1,0 +1,117 @@
+
+
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "  Headphones mouse phone",
+      "brand": "Sony",
+      "price": 2000,
+      "category": "Electronics",
+      "stock": 25,
+      "rating": 4.5,
+      "image": "https://i.ibb.co/2nzw5kQ/headphones.jpg",
+      "description": "High-quality wireless headphones with deep bass and long battery life."
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch  ",
+      "brand": "Apple",
+      "price": 12000,
+      "category": "Wearables",
+      "stock": 15,
+      "rating": 4.8,
+      "image": "https://i.ibb.co/3M8gKkC/smartwatch.jpg",
+      "description": "Advanced smartwatch with fitness tracking and health monitoring features."
+    },
+    {
+      "id": 3,
+      "name": "Gaming Mechanical Keyboard",
+      "brand": "Redragon",
+      "price": 3200,
+      "category": "Gaming",
+      "stock": 40,
+      "rating": 4.4,
+      "image": "https://i.ibb.co/6yQkV8T/keyboard.jpg",
+      "description": "RGB mechanical keyboard designed for smooth gaming experience."
+    },
+    {
+      "id": 4,
+      "name": "DSLR Camera ",
+      "brand": "Canon",
+      "price": 55000,
+      "category": "Photography",
+      "stock": 10,
+      "rating": 4.7,
+      "image": "https://i.ibb.co/7GkXJ8v/camera.jpg",
+      "description": "Professional DSLR camera with 24MP sensor and 4K video recording."
+    },
+    {
+      "id": 5,
+      "name": "Running Shoes Pro",
+      "brand": "Nike",
+      "price": 3800,
+      "category": "Footwear",
+      "stock": 30,
+      "rating": 4.6,
+      "image": "https://i.ibb.co/0j9hW2Q/shoes.jpg",
+      "description": "Lightweight running shoes designed for comfort and speed."
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Fiction",
+      "price": 250,
+      "rating": 4.7,
+      "publishedYear": 1988
+    },
+    {
+      "id": 2,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "genre": "Self-help",
+      "price": 320,
+      "rating": 4.9,
+      "publishedYear": 2018
+    },
+    {
+      "id": 3,
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "genre": "Finance",
+      "price": 280,
+      "rating": 4.6,
+      "publishedYear": 1997
+    },
+    {
+      "id": 4,
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "genre": "Programming",
+      "price": 450,
+      "rating": 4.8,
+      "publishedYear": 2008
+    },
+    {
+      "id": 5,
+      "title": "The Power of Habit",
+      "author": "Charles Duhigg",
+      "genre": "Self-help",
+      "price": 300,
+      "rating": 4.5,
+      "publishedYear": 2012
+    },
+    {
+      "id": 6,
+      "title": "You Don’t Know JS",
+      "author": "Kyle Simpson",
+      "genre": "Programming",
+      "price": 400,
+      "rating": 4.7,
+      "publishedYear": 2015
+    }
+  ]
+}
