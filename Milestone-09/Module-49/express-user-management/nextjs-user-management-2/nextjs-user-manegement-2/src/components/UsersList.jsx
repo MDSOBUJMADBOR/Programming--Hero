@@ -1,6 +1,6 @@
 import React, { use } from 'react';
 
-const UsersList = ({usersPromise}) => {
+const UsersList = ({usersPromise}) => { 
 const users = use(usersPromise);
 
           return (
